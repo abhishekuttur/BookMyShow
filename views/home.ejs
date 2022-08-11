@@ -1,0 +1,224 @@
+
+<!-- Sandeep CODE---------------------------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<title>Document</title>
+<link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="" id="logo"></li>
+            <li><input type="text" id="placeholder" placeholder="Search for Movies,Events,Plays,Sports and Activities" width=""350px></li>
+            <li><select id="place" >
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Mubai">Mubai</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+            </li>
+            <li><button id="btn">Sign in</button></li>
+        </ul>
+    </nav>
+    <nav id="nav2">
+        <ul>
+            <li>Movies</li>
+            <li>Stream</li>
+            <li>Events</li>
+            <li>Plays</li>
+            <li>Sports</li>
+            <li>Activities</li>
+            <li>Buzz</li>
+            
+        </ul>
+        <ul>
+            <li>ListYourShow</li>
+            <li>Corporates</li>
+            <li>Offers</li>
+            <li>Gift cards</li>
+        </ul>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./cor1.avif" class="d-block w-100 m-2" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./cor2.avif" class="d-block w-100 m-2" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./cor3.avif" class="d-block w-100 m-2" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./cor4.avif" class="d-block w-100 m-2" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./cor5.avif" class="d-block w-100 m-2" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>  
+      </div>
+    
+      <h4 id="head4">Recommended movies</h4>
+    
+    <% data.map((x)=>{ %>
+        <div id="films">
+            <img class="images" src=<%= x.post %>  alt="" width="215px" height="400px">
+            <h4><%= x.title %></h4>
+             <p><%= x. lang %></p>
+        </div>
+     <% }) %><br/>
+
+     <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/lead-in-v3-collection-202102040828.png" alt="">
+     <h4 id="head4">The Best of Entertainment</h4>
+     <% data2.map((x)=>{ %>
+      <div id="films">
+          <img class="images" src=<%= x.post %>  alt="" width="215px" height="200px">
+          
+      </div>
+   <% }) %>
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MY CODE----------------------------- -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./cor1.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="./cor2.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="./cor3.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="./cor4.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="./cor5.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+        <% data.map((x)=>{ %>
+            <div class="posters">
+                <div> <img src="<%= x.post %>">
+                <p class="MovieName">
+                    <%=x.title%>
+                </p>
+                <p>
+                    <%=x.lang%>
+                </p>
+                 </div>
+            </div>
+            <% }) %>
+    </section>
+</body>
+
+</html> -->
